@@ -1,14 +1,10 @@
-# 38. Generate a list of four-digit numbers in a given range with all
-# their digits even and the number is a perfect square.
+#accept a list of words and return lenght of longest word using user defined function
 
-def perfectSquares(l, r):
-
-    for i in range(l, r+1):
-
-        if (i ** (.5) == int(i ** (.5))) and (i % 2 == 0):
-            print(i, end=" ")
-
-l = int(input ("Enter a 4 digit lower limit:"))
-r = int(input ("Enter a 4 digit upper limit:"))
-
-perfectSquares(l, r)
+def longest():
+    text = input("please input a list of words to evaluate :")
+    longest = 0
+    for words in text.split():
+        if len(words)>longest :
+            longest = len(words)
+    print("The longest word is",words,"with length",longest)
+longest()
