@@ -1,0 +1,3 @@
+python
+welcome to python
+python is a intrepreted language
